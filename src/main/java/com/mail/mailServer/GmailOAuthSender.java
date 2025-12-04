@@ -60,7 +60,7 @@ public class GmailOAuthSender {
     public static Gmail getGmailService() throws Exception {
         // 注意：此行會刪除舊的 Token 檔案，導致每次執行程式都需要重新彈出瀏覽器登入
         // 若希望記住登入狀態，請註解掉這一行
-//        clearStoredTokens(); 
+        clearStoredTokens(); 
 
         // 讀取 resources 目錄下的 credentials.json (OAuth 2.0 客戶端 ID 憑證)
         GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(GmailOAuthSender.class.getResourceAsStream("/credentials.json")));
