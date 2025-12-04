@@ -1,5 +1,4 @@
 /target/
 /tokens/
 # 忽略敏感憑證檔案
-/target/classes/credentials*.json
 /src/main/resources/credentials*.json
